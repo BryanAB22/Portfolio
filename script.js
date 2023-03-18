@@ -1,8 +1,5 @@
 const titles = [
-  {
-    lang: "en",
-    text: "Welcome To My Portfolio."
-  },
+  
   {
     lang: "es",
     text: "Bienvenido a Mi Portafolio."

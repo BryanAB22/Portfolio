@@ -248,6 +248,18 @@ header .header-1{
     width: 80px;
     height: 80px;
   }
+  .Snap{
+    width: 80px;
+    height: 80px;
+  }
+  .Git{
+    width: 80px;
+    height: 80px;
+  }
+  .Roblox{
+    width: 80px;
+    height: 80px;
+  }
 #Projects p{
 color: #ffffff;
 }
@@ -549,6 +561,17 @@ font-size: 20px;
   #Education p{
     color: #ffffff;
   }
+  #Projects ul p::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #e4bfbf; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: 1em;
+  }
+  #Projects p{
+    color: #ffffff;
+  }
   #Hobbies ul p::before
   {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
@@ -594,4 +617,3 @@ font-size: 20px;
     text-align: end;
     font-size: 0.9rem;
   }
-  
