@@ -1,0 +1,597 @@
+/* CSS Reset */
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+#Hobbies{
+  padding: 0rem;
+  font-family: serif;
+}
+
+#Hobbies h2
+{
+  padding:1rem;
+  font-family: serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px #f6f5fa, 0px 0px 10px #f3e6e4, 0px 0px 10px #ffffff,
+    0px 0px 20px #ffffff;
+  animation: cursor 1s infinite step-end, typing 12s infinite steps(16);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 10px solid #ffffff;
+}
+#Hobbies p{
+  font-size: 30px;
+  color:#ffffff;
+  font-size: 25px;
+  font-family:serif;
+  
+  letter-spacing: -1px; 
+  line-height: 1; 
+  text-indent: 1rem;
+
+
+}
+#Bio h2{
+  font-family: serif;
+  font-size: 70px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px #f6f5fa, 0px 0px 10px #f3e6e4, 0px 0px 10px #ffffff,
+    0px 0px 20px #ffffff;
+  animation: cursor 1s infinite step-end, typing 12s infinite steps(16);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 10px solid #ffffff;
+}
+
+
+/*#Bio h2{
+  font-size: 70px;
+  font-family: serif;
+  font-weight: 600;
+  color: transparent;
+  background-image: linear-gradient(to right ,#ffffff, #000000, #f9f9f9, #000000, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;    
+  background-size: 200%;
+  background-position: -200%;
+  animation: animated-gradient 15s infinite alternate-reverse;  
+ 
+}*/
+
+#Bio p{
+font-size: 30px;
+font-weight: 800;
+
+ color:#ffffff;
+  text-align: center;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  
+}
+#Color h1{
+  
+    position: relative;
+    font-style: bold;
+    font-size: 5rem;
+    font-weight: 800;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;   
+}
+  #Color h1{
+    background-image: repeating-radial-gradient(farthest-side at 5px 5px,#553c9a, #ee4b2b, #553c9a);
+  }
+  
+
+
+  #Main{
+    padding: 1rem;
+    font-family: serif;
+  }
+   
+/*#Main h1 {
+  font-family: serif;
+    font-size: 70px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #f6f5fa, 0px 0px 10px #f3e6e4, 0px 0px 10px #ffffff,
+      0px 0px 20px #ffffff;
+    animation: cursor 1s infinite step-end, typing 12s infinite steps(16);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 10px solid #ffffff;
+}*/
+
+#Bio {
+  position: relative;
+  padding:1rem;
+}
+
+
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
+
+header {
+    margin: 0;
+    padding: 2rem;
+    width: 100%;
+    /*height: 100vh;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Roboto:ital,wght@0,500;0,900;1,500&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: serif;
+  background-color: #000000;
+}
+*{
+  box-sizing: border-box;
+}
+/*Contact Page*/
+
+/*header .header-1{
+  background-image: repeating-radial-gradient(closest-side at 20px 20px,#553c9a, #ee4b2b, #553c9a);
+}*/
+header h1 {
+  position: relative;
+  left: 0%;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;   
+}
+header .header-1{
+  background-image: repeating-radial-gradient(farthest-side at 5px 5px,#553c9a, #ee4b2b, #553c9a);
+}
+
+
+
+.glow-on-hover {
+    width: 300px;
+    height: 60px;
+    border: none;
+    outline: none;
+    color: #c68989;
+    background: #000000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: x-large;
+    
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  .link {
+    width: 80px;
+    height: 80px;
+  }
+#Projects p{
+color: #ffffff;
+}
+#Projects h1{
+  
+  position: relative;
+  font-style: bold;
+  font-size: 5rem;
+  font-weight: 800;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;   
+}
+#projects p{
+  
+    margin-bottom: 20px;
+}
+#Projects h1{
+  background-image: repeating-radial-gradient(farthest-side at 5px 5px,#553c9a, #ee4b2b, #553c9a);
+}
+#Projects h2{
+  font-family: serif;
+  font-size: 70px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px #f6f5fa, 0px 0px 10px #f3e6e4, 0px 0px 10px #ffffff,
+    0px 0px 20px #ffffff;
+  animation: cursor 1s infinite step-end, typing 12s infinite steps(16);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 10px solid #ffffff;
+}
+  #contact{
+    color: #ffffff;
+    font-size: 20px;
+  }
+  #contact h2{
+    font-family: serif;
+  font-size: 70px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px #f6f5fa, 0px 0px 10px #f3e6e4, 0px 0px 10px #ffffff,
+    0px 0px 20px #ffffff;
+  animation: cursor 1s infinite step-end, typing 12s infinite steps(16);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 10px solid #ffffff;
+  }
+  a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000000;
+    box-shadow: 0px 2px 10px rgb(97, 40, 40);
+    text-decoration: none;
+  }
+  
+
+  
+  nav ul {
+    display: flex;
+    text-decoration: none;
+  }
+  
+  nav li {
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  #WorkExperience{
+    padding: .75rem;
+    padding-right: 1rem;
+    
+  }
+  #Skills{
+    padding: .75rem;
+    padding-right: 1rem;
+  }
+  #Skills h1{
+    font-family: serif;
+    font-size: 70px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #f6f5fa, 0px 0px 10px #f3e6e4, 0px 0px 10px #ffffff,
+      0px 0px 20px #ffffff;
+    animation: cursor 1s infinite step-end, typing 12s infinite steps(16);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 10px solid #ffffff;
+  }
+  
+  #Skills h2{
+    font-size: 40px;
+  font-family: serif;
+  font-weight: 600;
+  color: transparent;
+  background-image: linear-gradient(to right ,#1e4368, #d8d81a, #f8d216, #ff8000, #6a0eff);
+  -webkit-background-clip: text;
+  background-clip: text;    
+  background-size: 200%;
+  background-position: -200%;
+  animation: animated-gradient 15s infinite alternate-reverse;      
+}
+  
+ 
+  #WorkExperience h1{
+    
+    font-family: serif;
+    font-size: 70px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #f6f5fa, 0px 0px 10px #f3e6e4, 0px 0px 10px #ffffff,
+      0px 0px 20px #ffffff;
+    animation: cursor 1s infinite step-end, typing 12s infinite steps(16);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 10px solid #ffffff;
+    
+}
+@keyframes animated-gradient{
+  to{
+    background-position: 200%;
+  }
+}
+ @keyframes typing  {
+  0%{ width: 0ch} /*Text is hidden*/
+  30%{ width: 16ch;} /*The enitre header will be typed out 1 character at a time*/
+  80%{ width: 16ch;} /*Text stays visible*/
+  90%{ width: 0ch;} /*Text is deleted*/
+  100%{ width: 0ch;} /*Text stays hidden*/
+}
+#WorkExperience h2{
+  font-size: 40px;
+  font-family: serif;
+  font-weight: 600;
+  color: transparent;
+  background-image: linear-gradient(to right ,#ffffff, #ff0000, #11a85d, #ead93d, #0effd7);
+  -webkit-background-clip: text;
+  background-clip: text;    
+  background-size: 200%;
+  background-position: -200%;
+  animation: animated-gradient 15s infinite alternate-reverse;      
+}
+#Skills li{
+color: #ffffff;
+font-size: 20px;
+}
+
+#WorkExperience p{
+  color: #ffffff;
+font-size: 20px;
+}
+#WorkExperience li{
+  color: #ffffff;
+font-size: 20px;
+}
+#WorkExperience h3{
+    font-size: 30px;
+    font-family: serif;
+    font-weight: 600;
+    color: transparent;
+    background-image: linear-gradient(to right ,#ff0000, #fffdfd, #bb4a4a, #ffffff, #7c0000);
+    -webkit-background-clip: text;
+    background-clip: text;    
+    background-size: 200%;
+    background-position: -200%;
+    animation: animated-gradient 15s infinite alternate-reverse;      
+}
+#WorkExperience h5{
+ font-size: 20px;
+  text-align: end;
+  font-family: serif;
+}
+#WorkExperience h4{
+  color: #ffffff;
+  font-size: 25px;
+  font-family:serif;
+  font-weight: bold; 
+  font-style: italic;
+  letter-spacing: -1px; 
+  line-height: 1; 
+  text-indent: 1rem;
+
+}
+
+#myChart {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+
+
+
+#Skills ul{
+  list-style:none;
+}
+
+
+#Skills ul li::before{
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #e4bfbf; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: 1em; }
+
+  #WorkExperience ul li::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #e4bfbf; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: 1em;
+  }
+  #Education{
+    padding: .75rem;
+    padding-right: 1rem;
+  }
+  #Education h1{
+    
+    font-family: serif;
+    font-size: 70px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #f6f5fa, 0px 0px 10px #f3e6e4, 0px 0px 10px #ffffff,
+      0px 0px 20px #ffffff;
+    animation: cursor 1s infinite step-end, typing 12s infinite steps(16);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 10px solid #ffffff;
+  }
+  #Education h2 {
+
+    font-size: 40px;
+    font-family: serif;
+    font-weight: 600;
+    color: transparent;
+    background-image: linear-gradient(to right ,#0054c9, #fffb00, #000000, #ffa600, #0e6aff);
+    -webkit-background-clip: text;
+    background-clip: text;    
+    background-size: 200%;
+    background-position: -200%;
+    animation: animated-gradient 15s infinite alternate-reverse;      
+  }
+  #WorkExperience h6{
+    font-size: larger;
+    font-family: serial;
+    font: italic, bold;
+  }
+  #Education h4{
+    color: #fff;
+    font-size: 20px;
+  text-align: end;
+  font-family: serif;
+  }
+  #Education h5{
+    color: #ffffff;
+    font-family: serial;
+    font-size: medium;
+    font-size: 25px;
+  }
+  #Education li{
+    color:#ffffff;
+    font-size:  20px;
+  }
+
+  #Education ul li::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #e4bfbf; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: 1em;
+  }
+  #Education p{
+    color: #ffffff;
+  }
+  #Hobbies ul p::before
+  {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #e4bfbf; /* Change the color */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  
+  }
+
+
+  
+  
+  /* Contact form styles */
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button[type="submit"] {
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Footer styles */
+  footer {
+    padding: 1rem;
+    color: #ffffff;
+    background-color: #000000;
+    box-shadow: 0px -2px 10px rgba(255, 255, 255, 0.1);
+    text-align: end;
+    font-size: 0.9rem;
+  }
+  
