@@ -10,7 +10,7 @@
 {
   padding:1rem;
   font-family: serif;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 600;
   color: #ffffff;
   text-shadow: 0px 0px 5px #f6f5fa, 0px 0px 10px #f3e6e4, 0px 0px 10px #ffffff,
@@ -34,7 +34,7 @@
 }
 #Bio h2{
   font-family: serif;
-  font-size: 70px;
+  font-size: 90px;
   font-weight: 600;
   color: #ffffff;
   text-shadow: 0px 0px 5px #f6f5fa, 0px 0px 10px #f3e6e4, 0px 0px 10px #ffffff,
@@ -298,7 +298,7 @@ color: #ffffff;
   }
   #contact h2{
     font-family: serif;
-  font-size: 70px;
+  font-size: 80px;
   font-weight: 600;
   color: #ffffff;
   text-shadow: 0px 0px 5px #f6f5fa, 0px 0px 10px #f3e6e4, 0px 0px 10px #ffffff,
@@ -440,7 +440,7 @@ font-size: 20px;
 font-size: 20px;
 }
 #WorkExperience h3{
-    font-size: 30px;
+    font-size:40px;
     font-family: serif;
     font-weight: 600;
     color: transparent;
