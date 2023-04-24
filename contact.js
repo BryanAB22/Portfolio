@@ -12,13 +12,17 @@ function submitForm(event) {
   formData.append("message", message);
 
   // Send the form data to the server using the Fetch API
-  fetch("send.php", {
+  fetch("https://formspree.io/f/your_form_id", {
     method: "POST",
     body: formData
   })
-  .then(response => response.text())
-  .then(text => {
-    alert(text);
+  .then(response => response.json())
+  .then(json => {
+    if (json.ok) {
+      alert("Thank you for your message! We'll get back to you as soon as possible.");
+    } else {
+      alert("An error occurred while submitting the form. Please try again.");
+    }
     document.getElementById("contact-form").reset();
   })
   .catch(error => {
