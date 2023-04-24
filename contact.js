@@ -1,41 +1,28 @@
-const form = document.querySelector('form');
-const nameInput = document.querySelector('#name');
-const emailInput = document.querySelector('#email');
-const messageInput = document.querySelector('#message');
+function submitForm(event) {
+  event.preventDefault(); // Prevent the default form submission behavior
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
 
-  const name = nameInput.value.trim();
-  const email = emailInput.value.trim();
-  const message = messageInput.value.trim();
-
-  if (!name || !email || !message) {
-    alert('Please fill out all fields.');
-    return;
-  }
-
+  // Prepare the form data for submission
   const formData = new FormData();
-  formData.append('name', name);
-  formData.append('email', email);
-  formData.append('message', message);
+  formData.append("name", name);
+  formData.append("email", email);
+  formData.append("message", message);
 
-  fetch('send.php', {
-    method: 'POST',
+  // Send the form data to the server using the Fetch API
+  fetch("send.php", {
+    method: "POST",
     body: formData
   })
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.text();
-  })
-  .then(data => {
-    alert(data);
-    form.reset();
+  .then(response => response.text())
+  .then(text => {
+    alert(text);
+    document.getElementById("contact-form").reset();
   })
   .catch(error => {
-    alert('There was a problem with your submission, please try again.');
-    console.error('Error:', error);
+    console.error("Error submitting form:", error);
+    alert("An error occurred while submitting the form. Please try again.");
   });
-});
+}
